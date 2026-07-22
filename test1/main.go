@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// Adjust these for your local PostgreSQL installation
-	connStr := "host=localhost port=5432 user=postgres password=yourpassword dbname=yourdb sslmode=disable"
+	connStr := "host=localhost port=5432 user=postgres password=password dbname=yourdb sslmode=disable"
 
 	db, err := sql.Open("pgx", connStr)
 	if err != nil {
